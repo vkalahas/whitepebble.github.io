@@ -1,0 +1,36 @@
+<script src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+<script src="https://www.blackrock.com/tools/api/js/hackathon"></script>
+
+<div class="container">
+  <h4>
+	Query
+	</h4>
+	<div class="input-group">
+    <input id="search" type="search" class="form-control" placeholder="Search..." value="blackrock assetType:Stock">
+    <span class="input-group-btn">
+        <button id="submit" class="btn btn-primary" type="button">Search</button>
+      </span>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>As Of Date</th>
+          <th>1 Day</th>
+          <th>1 Month</th>
+          <th>1 Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="description">-</td>
+          <td id="asOfDate">-</td>
+          <td id="oneDay">-</td>
+          <td id="oneMonth">-</td>
+          <td id="oneYear">-</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
